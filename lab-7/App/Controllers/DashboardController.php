@@ -52,7 +52,7 @@ class DashboardController
     }
 
 
-    public function UpdateRole()
+    public function postUpdateRole()
     {
         if (!Auth::isLogin()) {
             response()->jsonMessage('You must be logged in to update your email', 401);
@@ -92,7 +92,7 @@ class DashboardController
         }
     }
 
-    public function getRequestUpdateRole()
+    public function getUpdateRole()
     {
         if (!Auth::isLogin()) {
             response()->jsonMessage('You must be logged in to update your email', 401);

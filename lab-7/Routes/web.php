@@ -11,5 +11,5 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [DashboardController::class, 'logout']);
 Route::post('/update-email', [DashboardController::class, 'UpdateEmail']);
-Route::post('/update-role', [DashboardController::class, 'UpdateRole']);
-Route::get('/update-role', [DashboardController::class, 'getRequestUpdateRole']);
+Route::post('/update-role', [DashboardController::class, 'postUpdateRole']);
+Route::get('/update-role', [DashboardController::class, 'getUpdateRole']);
