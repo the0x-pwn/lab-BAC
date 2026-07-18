@@ -1,0 +1,615 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #fff;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #f3f3f3;
+      border-bottom: 3px solid #e3721a;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-svg {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .lab-title {
+      font-size: 20px;
+      color: #444;
+    }
+
+    .lab-back {
+      font-size: 13px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    nav.account-nav {
+      text-align: right;
+      padding: 15px 40px;
+      font-size: 14px;
+    }
+
+    nav.account-nav a {
+      color: #1a6ecc;
+      text-decoration: none;
+    }
+
+    nav.account-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 0 20px;
+    }
+
+    .hero .eyebrow {
+      letter-spacing: 8px;
+      color: #999;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .hero .hanger {
+      font-size: 40px;
+      color: #888;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      color: #1a4c6e;
+      margin: 5px 0 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 40px 60px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 260px;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .product .img-wrap {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .product img,
+    .product svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.25s ease;
+    }
+
+    .product:hover img,
+    .product:hover svg {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 12px 14px 14px;
+    }
+
+    .product-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #222;
+      margin: 0 0 4px;
+    }
+
+    .product-hint {
+      font-size: 12px;
+      color: #888;
+      margin: 0 0 12px;
+      line-height: 1.4;
+    }
+
+    .product-btn {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      background: #e3721a;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .product-btn:hover {
+      background: #c95f10;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #fff;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #f3f3f3;
+      border-bottom: 3px solid #e3721a;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.1;
+      color: #1a1a1a;
+      padding-right: 20px;
+      border-right: 1px solid #ccc;
+      padding-top: 4px;
+    }
+
+    .logo span {
+      background: #e3721a;
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 3px;
+      font-size: 20px;
+      margin-left: 4px;
+    }
+
+    .lab-title {
+      font-size: 20px;
+      color: #333;
+      margin: 0 0 12px;
+      line-height: 1.3;
+    }
+
+    .lab-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-submit {
+      background: #e3721a;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover {
+      background: #c95f10;
+    }
+
+    .back-link {
+      font-size: 13px;
+      color: #999;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .lab-status {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+      font-size: 13px;
+      height: 30px;
+    }
+
+    .lab-status .lab {
+      background: #4caf50;
+      color: #fff;
+      padding: 6px 10px;
+      font-weight: bold;
+    }
+
+    .lab-status .status {
+      padding: 6px 12px;
+      background: #fff;
+    }
+
+    .lab-status .icon {
+      padding: 6px 10px;
+      border-left: 1px solid #ccc;
+    }
+
+    nav.account-nav {
+      text-align: right;
+      padding: 15px 40px;
+      font-size: 14px;
+    }
+
+    nav.account-nav a {
+      color: #1a6ecc;
+      text-decoration: none;
+    }
+
+    nav.account-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 20px 40px 60px;
+    }
+
+    .content h1 {
+      color: #1a4c6e;
+      font-size: 34px;
+      font-weight: 400;
+      margin: 0 0 20px;
+    }
+
+    .content p {
+      font-size: 14px;
+      margin: 6px 0;
+      color: #333;
+    }
+
+    .account-box {
+      background: #eceff1;
+      max-width: 700px;
+      padding: 24px;
+      margin-top: 24px;
+      border-radius: 2px;
+    }
+
+    .account-box label {
+      display: block;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .email-field {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .email-field input {
+      width: 100%;
+      padding: 10px 40px 10px 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      background: #fff;
+      outline: none;
+    }
+
+    .email-field input:focus {
+      border-color: #e3721a;
+    }
+
+    .email-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #1a4c6e;
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    .btn-update {
+      background: #1e8a72;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn-update:hover {
+      background: #176e5b;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #fff;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #f3f3f3;
+      border-bottom: 3px solid #e3721a;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.1;
+      color: #1a1a1a;
+      padding-right: 20px;
+    }
+
+    .logo span {
+      background: #e3721a;
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 3px;
+      font-size: 20px;
+      margin-left: 4px;
+    }
+
+    nav.account-nav {
+      text-align: right;
+      padding: 15px 40px;
+      font-size: 14px;
+    }
+
+    nav.account-nav a {
+      color: #1a6ecc;
+      text-decoration: none;
+    }
+
+    nav.account-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 0 10px;
+    }
+
+    .hero .eyebrow {
+      letter-spacing: 8px;
+      color: #999;
+      font-size: 16px;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      color: #1a4c6e;
+      margin: 5px 0 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .login-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px 80px;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 380px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      padding: 30px 30px 34px;
+      background: #fff;
+    }
+
+    .login-card h2 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      color: #1a4c6e;
+      text-align: center;
+    }
+
+    .login-card p.sub {
+      margin: 0 0 24px;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .field input:focus {
+      border-color: #e3721a;
+    }
+
+    .login-btn {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      background: #e3721a;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      margin-top: 6px;
+    }
+
+    .login-btn:hover {
+      background: #c95f10;
+    }
+
+    .login-footer {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    .login-footer a {
+      color: #1a6ecc;
+      text-decoration: none;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0;
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #e5e5e5;
+    }
+.status-msg {
+  min-width: 260px;
+  max-width: 320px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 12px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #2b3a4a;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+.status-msg .icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.status-msg .title {
+  font-weight: bold;
+}
+
+.status-msg .body {
+  margin-top: 2px;
+}
+
+.status-success {
+  border-left-color: #2e7d32;
+}
+
+.status-success .icon {
+  background: #2e7d32;
+}
+
+.status-success .title {
+  color: #2e7d32;
+}
+
+.status-error {
+  border-left-color: #c0392b;
+}
+
+.status-error .icon {
+  background: #c0392b;
+}
+
+.status-error .title {
+  color: #c0392b;
+}
+
+.hidden
+{
+  display: none !important;
+}
+
+.error {
+  border: 1.5px solid #c0392b !important;
+  background: #fdf2f1 !important;
+}
