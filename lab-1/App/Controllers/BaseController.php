@@ -4,8 +4,5 @@ namespace App\Controllers;
 
 class BaseController
 {
-    public function index()
-    {
-        view('home');
-    }
+   //
 }
