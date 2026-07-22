@@ -1,6 +1,5 @@
 <?php
 namespace Src\Application;
-use Dotenv\Dotenv;
 use Src\Http\HandelRoute;
 use Src\Http\Request;
 use Src\Http\Response;
@@ -17,8 +16,6 @@ class App
     public function __construct()
     {
         SessionConfig::start();
-        $env = Dotenv::createImmutable(base_path());
-        $env->load();
         $this->request = new Request();
         $this->response = new Response();
         $this->route = new Route($this->request, $this->response);
