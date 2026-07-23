@@ -1,6 +1,6 @@
 # BAC Labs — Broken Access Control Vulnerability Labs
 
-A collection of **7 hands-on labs** built to teach the **Broken Access Control (BAC)** vulnerability. The labs are designed for beginners and progress in difficulty, helping you understand how the vulnerability occurs, how to detect it, and how to exploit it in a safe, local environment — while also letting you trace through the source code to understand the root cause of each flaw.
+A collection of **9 hands-on labs** built to teach the **Broken Access Control (BAC)** vulnerability. The labs are designed for beginners and progress in difficulty, helping you understand how the vulnerability occurs, how to detect it, and how to exploit it in a safe, local environment — while also letting you trace through the source code to understand the root cause of each flaw.
 
 ---
 
