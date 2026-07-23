@@ -21,7 +21,7 @@ This project provides a practical training environment for understanding **Broke
 
 | Folder / File | Description |
 |----------------|-------------|
-| `lab-1` → `lab-7` | Seven independent labs, each representing a different BAC scenario |
+| `lab-1` → `lab-9` | Seven independent labs, each representing a different BAC scenario |
 | `bac.sql` | Database file required by all labs |
 
 ---
