@@ -6,7 +6,7 @@ A collection of **9 hands-on labs** built to teach the **Broken Access Control (
 
 ## 🎯 About the Project
 
-This project provides a practical training environment for understanding **Broken Access Control**, one of the most critical vulnerabilities listed in the **OWASP Top 10**. The 7 challenges vary in difficulty and scenario, allowing you to:
+This project provides a practical training environment for understanding **Broken Access Control**, one of the most critical vulnerabilities listed in the **OWASP Top 10**. The 9 challenges vary in difficulty and scenario, allowing you to:
 
 - Understand the core concept of the vulnerability and how it arises in code.
 - Trace through the source code of each lab to identify the technical root cause.
@@ -83,7 +83,7 @@ From there, you can start exploring and solving the challenge.
 
 ## 📚 Suggested Usage
 
-1. Start with `lab-1` and work your way up to `lab-7` — the labs increase in difficulty progressively.
+1. Start with `lab-1` and work your way up to `lab-9` — the labs increase in difficulty progressively.
 2. Try to discover the vulnerability yourself (black-box approach) before checking the source code.
 3. After exploiting it, review the code to understand the root cause of the flaw.
 4. Take notes on each lab: how the vulnerability was found, and how it could be fixed.
