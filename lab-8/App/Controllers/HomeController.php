@@ -8,6 +8,9 @@ class HomeController
 {
     public function dashboard()
     {
+        if (!Auth::logout()) {
+            response()->redirect('/login');
+        }
         view('pages.dashboard');
     }
 

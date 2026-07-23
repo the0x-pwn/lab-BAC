@@ -9,8 +9,8 @@ class DashboardController
 {
     public function index()
     {
-        if (!session()->exists('login') && session()->get('login') !== 'true') {
-            response()->redirect('/');
+        if (!Auth::logout()) {
+            response()->redirect('/login');
         }
 
         $userId = $_GET['userId'] ?? null;

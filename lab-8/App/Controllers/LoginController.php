@@ -7,8 +7,9 @@ class LoginController
 {
     public function index(): void
     {
-        view('pages.login', compact('message'));
+        view('pages.login');
     }
+
     public function login()
     {
         $username = trim(request()->input('username'));

@@ -9,11 +9,7 @@ class LoginController
 {
     public function index(): void
     {
-        if (Auth::isLogin()) {
-            response()->redirect('/');
-        }
-
-        view('pages.login');
+          view('pages.login');
     }
 
     public function login(): void

@@ -8,10 +8,10 @@ class DashboardController
 {
     public function index()
     {
-        if (!session()->exists('login') && session()->get('login') !== 'true') {
-            response()->redirect('/');
+        if (!Auth::logout()) {
+            response()->redirect('/login');
         }
-        view('pages.dashboard', compact('flag'));
+        view('pages.dashboard');
     }
 
     public function UpdateEmail()

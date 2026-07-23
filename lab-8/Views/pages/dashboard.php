@@ -1,4 +1,3 @@
-<?php if (session()->exists('login') && session()->get('login') === 'true'): ?>
     <div class="relative z-10 w-full max-w-lg">
         <div class="glass rounded-3xl p-10 fade-up">
 
@@ -44,6 +43,3 @@
             </form>
         </div>
     </div>
-<?php else: ?>
-    <?php response()->redirect('/login') ?>
-<?php endif; ?>
