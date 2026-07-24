@@ -1,12 +1,12 @@
 # BAC Labs — Broken Access Control Vulnerability Labs
 
-A collection of **7 hands-on labs** built to teach the **Broken Access Control (BAC)** vulnerability. The labs are designed for beginners and progress in difficulty, helping you understand how the vulnerability occurs, how to detect it, and how to exploit it in a safe, local environment — while also letting you trace through the source code to understand the root cause of each flaw.
+A collection of **9 hands-on labs** built to teach the **Broken Access Control (BAC)** vulnerability. The labs are designed for beginners and progress in difficulty, helping you understand how the vulnerability occurs, how to detect it, and how to exploit it in a safe, local environment — while also letting you trace through the source code to understand the root cause of each flaw.
 
 ---
 
 ## 🎯 About the Project
 
-This project provides a practical training environment for understanding **Broken Access Control**, one of the most critical vulnerabilities listed in the **OWASP Top 10**. The 7 challenges vary in difficulty and scenario, allowing you to:
+This project provides a practical training environment for understanding **Broken Access Control**, one of the most critical vulnerabilities listed in the **OWASP Top 10**. The 9 challenges vary in difficulty and scenario, allowing you to:
 
 - Understand the core concept of the vulnerability and how it arises in code.
 - Trace through the source code of each lab to identify the technical root cause.
@@ -21,7 +21,7 @@ This project provides a practical training environment for understanding **Broke
 
 | Folder / File | Description |
 |----------------|-------------|
-| `lab-1` → `lab-7` | Seven independent labs, each representing a different BAC scenario |
+| `lab-1` → `lab-9` | Seven independent labs, each representing a different BAC scenario |
 | `bac.sql` | Database file required by all labs |
 
 ---
@@ -83,7 +83,7 @@ From there, you can start exploring and solving the challenge.
 
 ## 📚 Suggested Usage
 
-1. Start with `lab-1` and work your way up to `lab-7` — the labs increase in difficulty progressively.
+1. Start with `lab-1` and work your way up to `lab-9` — the labs increase in difficulty progressively.
 2. Try to discover the vulnerability yourself (black-box approach) before checking the source code.
 3. After exploiting it, review the code to understand the root cause of the flaw.
 4. Take notes on each lab: how the vulnerability was found, and how it could be fixed.
