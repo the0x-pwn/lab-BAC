@@ -71,7 +71,13 @@ class DashboardController
         $password = (string) request()->input('password');
         $confirm_password = (string) request()->input('confirm-password');
 
-        if (!$password || !$confirm_password) {
+
+        if (!Auth::isValidUsername($username)) {
+            response()->jsonMessage('This username "' . $username . '" does not exist.', 422);
+            response()->redirect('/dashboard');
+        }
+
+        if (!$username || !$password || !$confirm_password) {
             response()->jsonMessage('Both fields are required.', 422);
         }
 

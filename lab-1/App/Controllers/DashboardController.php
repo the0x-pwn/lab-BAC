@@ -6,9 +6,6 @@ class DashboardController
 {
     public function index()
     {
-        // if (!session()->exists('login') && session()->get('login') !== 'true') {
-        //     response()->redirect('/');
-        // }
         $flag = '0328e051467a5a5f6531322feaa117c9b941d3ae5211b609cbccb00b776e';
         view('pages.dashboard', compact('flag'));
     }
