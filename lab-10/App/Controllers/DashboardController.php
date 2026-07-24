@@ -6,7 +6,7 @@ use Src\Authentication\Auth;
 
 class DashboardController
 {
-    public function index()
+    public function index(): void
     {
         if (!Auth::isLogin()) {
             response()->redirect('/');
@@ -15,13 +15,13 @@ class DashboardController
         view('pages.dashboard');
     }
 
-    public function UpdateEmail()
+    public function UpdateEmail(): void
     {
         if (!Auth::isLogin()) {
             response()->jsonMessage('You must be logged in to update your email', 401);
         }
 
-        $email = trim(request()->input('email'));
+        $email = (string) trim(request()->input('email'));
 
         if (!$email) {
             flash()->set('error', 'Email is required');
@@ -47,7 +47,7 @@ class DashboardController
     }
 
 
-    public function rest_password(string $token)
+    public function rest_password(string $token): void
     {
         if (!Auth::isLogin()) {
             response()->redirect('/login');
@@ -61,15 +61,15 @@ class DashboardController
         view('pages.rest_password');
     }
 
-    public function updatePassword()
+    public function updatePassword(): void
     {
         if (!Auth::isLogin()) {
             response()->redirect('/login');
         }
 
-        $username = trim(request()->input('username'));
-        $password = request()->input('password');
-        $confirm_password = request()->input('confirm-password');
+        $username = (string) trim(request()->input('username'));
+        $password = (string) request()->input('password');
+        $confirm_password = (string) request()->input('confirm-password');
 
         if (!$password || !$confirm_password) {
             response()->jsonMessage('Both fields are required.', 422);

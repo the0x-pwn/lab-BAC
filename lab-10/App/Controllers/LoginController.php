@@ -13,8 +13,8 @@ class LoginController
 
     public function login(): void
     {
-        $username = trim(request()->input('username'));
-        $password = request()->input('password');
+        $username = (string) trim(request()->input('username'));
+        $password = (string) request()->input('password');
 
         if (!$username || !$password) {
             response()->jsonMessage('Username and password are required.', 400);

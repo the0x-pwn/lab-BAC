@@ -6,7 +6,7 @@ use Src\Authentication\Auth;
 
 class ForgotPasswordController
 {
-    public function index()
+    public function index(): void
     {
         if (!Auth::isLogin()) {
             response()->redirect('/login');
@@ -14,13 +14,13 @@ class ForgotPasswordController
         view('pages.forgot_password');
     }
 
-    public function forgot_password()
+    public function forgot_password(): void
     {
         if (!Auth::isLogin()) {
             response()->redirect('/login');
         }
 
-        $username = request()->input('username');
+        $username = (string) request()->input('username');
 
         if (!$username) {
             response()->jsonMessage('username or email is required.', 422);
