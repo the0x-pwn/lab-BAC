@@ -26,14 +26,11 @@ class LoginController
 
         if ($user && password_verify($password, $user['password'])) {
             session()->set('login', 'true');
-            session()->set('isValid2FA', 'true');
             session()->set('id', $user['id']);
-            session()->set('email_2fa', $user['email']);
             session()->set('username', $user['username']);
             session()->set('email', $user['email']);
             session()->set('roleid', $user['roleid']);
-            session()->set('code', code());
-            response()->redirect('/email-verification');
+            response()->redirect('/dashboard');
         }
 
         flash()->set('error', 'Invalid credentials');
